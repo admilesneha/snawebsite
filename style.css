@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+   /* .logo img {
+ width: 40px; 
+ 
+}*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #eaf7e4;
+    position: relative;
+    overflow: hidden;
+}
+.content {
+    max-width: 50%;
+}
+body h1 {
+    font-size: 2.5em;
+    color: #333;margin: 0px 0px 10px 0px;
+}
+body p {
+    font-size: 1.2em;
+    color: #666;
+}
+.cta {
+    background-color: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+.image {
+    position: relative;
+    width: 400px;
+}
+.image img {
+    width: 100%;
+    position: relative;
+    z-index: 2;left: 66px; animation: slideInRight 2s ease-in-out forwards;;
+top: -40px;
+}
+.image2 img {
+    width: 100%;
+    position: relative;
+    z-index: 2;left: -55px;animation: slideInLeft 3s ease-in-out forwards;
+top: 33px;
+}
+.food-gallery{text-align: center;}
+.image::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: #2e7d32;
+    border-radius: 50%;
+    top: 35%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.chilli-image {
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    width: 150px;
+    z-index: 3;
+}
+.image2::before{content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #2e7d32;
+    border-radius: 50%;
+    top: 75%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: 1;}
+
+    @keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.card-container{display: flex;justify-content: center;}
+.card {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 450px;
+margin: 1rem;
+transition: transform 0.2s;
+}
+
+/* .card:hover {
+transform: scale(1.05);
+} */
+
+.card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 1rem;text-align: left;
+}
+
+.card-content h2 {
+margin-top: 0;
+font-size: 1.5rem;
+}
+
+.card-content p {
+color: #555;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;width: 1415px;
+margin: 0px auto;
+}
+
+.column {
+flex: 25%;
+max-width: 33.3%;
+padding: 0 4px;
+}
+
+.column img {
+margin-top: 8px;
+vertical-align: middle;
+width: 100%;
+filter: grayscale(1) brightness(0.5);
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s linear;
+}
+
+.column img:hover {
+filter: grayscale(0);
+}
+
+@media screen and (max-width: 700px) {
+.column {
+flex: 100%;
+max-width: 100%;
+}
+.column img {
+filter: grayscale(0) brightness(1);
+}
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+.container p{margin: 10px 0px 0px 0px;}
+.card1 {
+    background: white;
+    padding: 40px;
+    border-radius: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;    text-align: center;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.icon {
+    background-color: #4a7040;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+.footer {
+    background-color: #4a7040;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top-left-radius: 50% 20px;
+    border-top-right-radius: 50% 20px;text-align: center;
+}
+.footer a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
